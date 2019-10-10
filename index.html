@@ -64,6 +64,9 @@ html h2, body h2 {
   transform-style: preserve-3d;
   backface-visibility: hidden;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-perspective: 0;
+  -webkit-backface-visibility: hidden;
+  -webkit-transform: translate3d(0,0,0);
 }
 #card #front {
   transform: rotateY(0deg);
@@ -639,7 +642,7 @@ p, h1 {
 
 	
 	<!-- to here -->
-	<div class="row" >
+	<div class="row" style="display: flex" >
 	<div style="margin: 100px auto;
   width:80%;
 	    border-radius: 8px;
